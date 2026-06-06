@@ -1,0 +1,110 @@
+Build a full-stack web application.
+
+The application allows a host to select a movie file from their local computer and instantly stream it to friends inside a private watch room.
+
+Core Requirements:
+
+1. Movie Streaming
+
+* Host selects a local video file.
+* Video must not be permanently uploaded or stored.
+* Streaming should occur only while the watch party is active.
+* Use WebRTC-based streaming architecture.
+* Support MP4, MKV, MOV, and common browser-compatible formats.
+* Automatically clean up all temporary session data when the room ends.
+
+2. Room System
+
+* Host creates a watch party.
+* Generate a unique room code.
+* Generate a shareable invite link.
+* Guests join using the room code or invite link.
+* No user accounts or authentication required.
+* Temporary guest usernames only.
+
+3. Synchronized Playback
+
+* All viewers remain synchronized.
+* Play, pause, seek, skip, and playback-speed changes should sync across participants.
+* Any participant can control playback.
+* Synchronization should automatically correct drift between viewers.
+
+4. Voice Communication
+
+* Built-in voice rooms similar to Discord.
+* Support always-on voice chat.
+* Support push-to-talk mode.
+* Allow mute and unmute.
+* Display speaking indicators.
+
+5. Text Chat
+
+* Real-time room chat.
+* Message timestamps.
+* Join and leave notifications.
+* Emoji support.
+
+6. Participants
+
+* Display participant list.
+* Show active viewers.
+* Show microphone status.
+* Show current speaker.
+
+7. Room Management
+
+* Host can end room.
+* Host can remove participants.
+* Display room information and participant count.
+
+8. Performance
+
+* Target room size: 10–20 participants.
+* Optimize latency and synchronization.
+* Handle temporary network interruptions.
+* Reconnect users automatically.
+
+9. Backend
+
+* Real-time signaling server.
+* WebSocket communication.
+* WebRTC signaling.
+* Room management APIs.
+* Temporary in-memory session management.
+* No permanent movie storage.
+
+10. Architecture
+    Frontend:
+
+* React
+* TypeScript
+* Tailwind CSS
+
+Backend:
+
+* Node.js
+* Express
+* Socket.IO
+
+Real-Time:
+
+* WebRTC
+* WebSockets
+
+11. Integration Requirement
+    The UI is already designed and implemented.
+    Do not redesign the interface.
+    Create all backend logic, streaming logic, WebRTC integration, room management, synchronization services, voice chat functionality, and API connections required to make the existing UI fully functional.
+
+12. Deliverables
+
+* Complete project structure
+* Backend implementation
+* Frontend integration code
+* WebRTC signaling flow
+* Socket.IO events
+* API endpoints
+* State management
+* Deployment instructions
+* Scalable architecture explanation
+* Production-ready code with comments
